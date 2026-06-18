@@ -50,14 +50,18 @@ pip install lz4
 ```
 
 ### Files yang Diperlukan
-| File | Ukuran | Sumber |
-|------|--------|--------|
-| Stock firmware (`AP_*.tar.md5`) | ~3.6 GB | [SamFW](https://samfw.com/firmware/SM-A115F) |
-| `vbmeta_stock_patched.img` | 8.5 KB | [⬇ Unduh](./assets/posts/rooting-twrp-a11/vbmeta_stock_patched.img) atau buat sendiri (lihat §1) |
-| `magisk_patched-30700_opHBq.img` | 64 MB | [⬇ Unduh](./assets/posts/rooting-twrp-a11/magisk_patched-30700_opHBq.img) |
-| TWRP `recovery.img` | 33 MB | [⬇ Unduh](./assets/posts/rooting-twrp-a11/recovery.img) |
-| `flash_twrp.sh` | 7 KB | [⬇ Unduh](./assets/posts/rooting-twrp-a11/flash_twrp.sh) |
-| `twrp-3.7.0_afaneh92-a11q.tar` | 33 MB | [⬇ Unduh](./assets/posts/rooting-twrp-a11/twrp-3.7.0_afaneh92-a11q.tar) |
+
+**Disediakan di assets tutorial ini:**
+- [`vbmeta_stock_patched.img`](./assets/posts/rooting-twrp-a11/vbmeta_stock_patched.img) — 8.5 KB
+- [`magisk_patched-30700_opHBq.img`](./assets/posts/rooting-twrp-a11/magisk_patched-30700_opHBq.img) — 64 MB
+- [`twrp-3.7.0_afaneh92-a11q.tar`](./assets/posts/rooting-twrp-a11/twrp-3.7.0_afaneh92-a11q.tar) — 33 MB
+- [`recovery.img`](./assets/posts/rooting-twrp-a11/recovery.img) (TWRP) — 33 MB
+- [`flash_twrp.sh`](./assets/posts/rooting-twrp-a11/flash_twrp.sh) — 7 KB
+
+**Diperlukan dari eksternal / buat sendiri:**
+- **Stock firmware** `AP_*.tar.md5` (~3.6 GB) — unduh dari [SamFW](https://samfw.com/firmware/SM-A115F)
+- **`stock_boot.img`** — ekstrak dari firmware (lihat §2)
+- **`magisk_patched-*.img`** (64 MB) — patch via Magisk app (lihat §2)
 
 ---
 
