@@ -1,12 +1,14 @@
 ---
 layout: post
-title: Flipping Bits
+title: Membalikkan Bit
+lang: id
+lang-ref: flipping-bits
 category:
   - python
   - python3
   - programming
 ---
-Bit flipping is an algorithmic manipulation of binary digits (bits). It’s performing logical negation to a single bit, or each of several bits, switching state 0 to 1, and vice versa. Bit flipping one of bit manipulation algorithm which popular except other bit manipulation like AND, OR, XOR, NOT, and bit shifts. It’s usually used on a cryptography algorithm to make obfuscate of the message.
+Bit flipping adalah manipulasi algoritmik dari digit biner (bit). Ini melakukan negasi logika pada satu bit, atau beberapa bit, mengubah status 0 menjadi 1, dan sebaliknya. Bit flipping adalah salah satu algoritma manipulasi bit yang populer selain manipulasi bit lainnya seperti AND, OR, XOR, NOT, dan bit shifts. Ini biasanya digunakan pada algoritma kriptografi untuk mengaburkan pesan.
 
 ```python
 def flipping_bit(n, base=8):
@@ -27,6 +29,6 @@ if __name__ == '__main__':
     main()
 ```
 
-On the above function **flipping_bit**, you can change the base of bits length to your case.
+Pada fungsi **flipping_bit** di atas, kamu bisa mengubah panjang bit sesuai kebutuhan.
 
-Yeah, that is flipping bit for play with bits manipulation. Enjoy for reading and thanks for come in, goodnight.
+Ya, itu adalah flipping bit untuk bermain dengan manipulasi bit. Selamat membaca dan terima kasih sudah mampir, selamat malam.

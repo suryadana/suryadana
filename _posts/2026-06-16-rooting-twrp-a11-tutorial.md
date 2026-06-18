@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Cara Root & Install TWRP Samsung Galaxy A11 (SM-A115F) — Android 12
+lang: id
+lang-ref: rooting-twrp-a11
 category:
   - tutorial
   - android

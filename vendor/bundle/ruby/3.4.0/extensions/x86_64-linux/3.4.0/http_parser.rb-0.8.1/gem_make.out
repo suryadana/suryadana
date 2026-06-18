@@ -1,0 +1,19 @@
+current directory: /home/pendekar/Learn/ai-agent-sandbox/workspace/suryadana/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+/usr/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/pendekar/Learn/ai-agent-sandbox/workspace/suryadana/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260618-178388-i4riq1 sitelibdir\=./.gem.20260618-178388-i4riq1 clean
+
+current directory: /home/pendekar/Learn/ai-agent-sandbox/workspace/suryadana/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260618-178388-i4riq1 sitelibdir\=./.gem.20260618-178388-i4riq1
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.so
+
+current directory: /home/pendekar/Learn/ai-agent-sandbox/workspace/suryadana/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260618-178388-i4riq1 sitelibdir\=./.gem.20260618-178388-i4riq1 install
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20260618-178388-i4riq1
+
+current directory: /home/pendekar/Learn/ai-agent-sandbox/workspace/suryadana/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260618-178388-i4riq1 sitelibdir\=./.gem.20260618-178388-i4riq1 clean

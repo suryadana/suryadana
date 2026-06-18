@@ -1,12 +1,14 @@
 ---
 layout: post
-title: Simple ASYNCIO Python 3
+title: ASYNCIO Sederhana Python 3
+lang: id
+lang-ref: asyncio-python3
 category:
   - python
   - python3
   - optimization
 ---
-I have a problem with use of asyncio. Where every call my function must running with event loop. I hate it, because will make my code to long and not efficient. I think if used decorator will make simplify my code and work fast with async. This is my simple decorator which one will wrapping async function and called with event loop.
+Saya punya masalah dengan penggunaan asyncio. Di mana setiap pemanggilan fungsi harus berjalan dengan event loop. Saya tidak menyukainya, karena akan membuat kode saya panjang dan tidak efisien. Saya pikir jika menggunakan dekorator akan menyederhanakan kode saya dan bekerja cepat dengan async. Ini adalah dekorator sederhana saya yang akan membungkus fungsi async dan dipanggil dengan event loop.
 
 ```python
 import asyncio
@@ -31,7 +33,7 @@ def dynamic_async(method):
 
 ```
 
-I have two function the first is static_async, static_async function will call function async without return value of function or only called. The second dynamic_async will call function async with return of result of function. For the example usage of them.
+Saya punya dua fungsi, yang pertama adalah static_async, fungsi static_async akan memanggil fungsi async tanpa mengembalikan nilai atau hanya dipanggil saja. Yang kedua dynamic_async akan memanggil fungsi async dengan mengembalikan hasil dari fungsi tersebut. Contoh penggunaannya:
 
 ```python
 import asyncio
@@ -89,4 +91,4 @@ Printed of 9
 90
 ```
 
-Now you can use asynchronous function with happy.
+Sekarang kamu bisa menggunakan fungsi asynchronous dengan senang.

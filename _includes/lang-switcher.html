@@ -1,0 +1,13 @@
+<div class="lang-switcher">
+  <script>
+    var path = window.location.pathname;
+    if (path.startsWith('/en')) {
+      document.write('<a href="' + path.replace('/en', '') + '" title="Bahasa Indonesia">{{ site.data.en.switch_lang }}</a>');
+    } else {
+      document.write('<a href="/en' + path + '" title="English">{{ site.data.id.switch_lang }}</a>');
+    }
+  </script>
+  <noscript>
+    <a href="/en/" title="English">{{ site.data.id.switch_lang }}</a>
+  </noscript>
+</div>
