@@ -128,25 +128,13 @@ msg "Partisi boot terbaca — device OK"
 next "Push file ke device"
 # ============================================================
 TWRP_IMG="$DIR/recovery.img"
-MULTI_ZIP="$DIR/multidisabler-samsung-flashable.zip"
 
-for f in "$TWRP_IMG" "$MULTI_ZIP"; do
+for f in "$TWRP_IMG"; do
     [ ! -f "$f" ] && { err "File tidak ditemukan: $f"; exit 1; }
 done
 
 msg "Push recovery.img → /data/local/tmp/"
 adb push "$TWRP_IMG" /data/local/tmp/ 2>&1 | sed 's/^/  /'
-
-msg "Push multidisabler → /sdcard/ + /data/ + /cache/"
-adb push "$MULTI_ZIP" /sdcard/multidisabler.zip 2>&1 | sed 's/^/  /'
-
-adb shell "su -c '
-    for d in /data /data/local/tmp /cache /data/media/0 /data/media/0/Download; do
-        mkdir -p \"\$d\" 2>/dev/null
-        cp /sdcard/multidisabler.zip \"\$d/multidisabler.zip\" 2>/dev/null
-    done
-    echo OK
-'" 2>/dev/null
 
 # ============================================================
 next "Backup & disable recovery-from-boot.p"
@@ -246,16 +234,6 @@ echo -e "${BOLD}║  1. TWRP muncul (kalo gak: Vol Up+Power)    ║${NC}"
 echo -e "${BOLD}║                                             ║${NC}"
 echo -e "${BOLD}║  2. Wipe → Format Data → ketik 'yes'       ║${NC}"
 echo -e "${BOLD}║     ⚠️  HAPUS semua data internal          ║${NC}"
-echo -e "${BOLD}║                                             ║${NC}"
-echo -e "${BOLD}║  3. Install → pilih multidisabler.zip       ║${NC}"
-echo -e "${BOLD}║     Cari di:                                ║${NC}"
-echo -e "${BOLD}║     /sdcard/multidisabler.zip               ║${NC}"
-echo -e "${BOLD}║     /data/multidisabler.zip                 ║${NC}"
-echo -e "${BOLD}║     /data/local/tmp/multidisabler.zip       ║${NC}"
-echo -e "${BOLD}║     /cache/multidisabler.zip                ║${NC}"
-echo -e "${BOLD}║     → Swipe to flash                        ║${NC}"
-echo -e "${BOLD}║                                             ║${NC}"
-echo -e "${BOLD}║  ⚠️  JANGAN REBOOT SEBELUM FLASH MULTIDISABLER ║${NC}"
 echo -e "${BOLD}║                                             ║${NC}"
 echo -e "${BOLD}║  4. Reboot → Recovery (cek TWRP masih ada)  ║${NC}"
 echo -e "${BOLD}║  5. Reboot → System                         ║${NC}"
